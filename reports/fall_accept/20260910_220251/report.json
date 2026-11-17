@@ -1,0 +1,51 @@
+{
+  "time": "2026-09-10 22:04:11",
+  "thresholds": {
+    "cold_start_s": 30.0,
+    "fps_mean": 10.0,
+    "rss_growth_mb": 60.0,
+    "alarm_lat_ms": 200.0,
+    "reconnect": 10
+  },
+  "results": {
+    "cold_start": {
+      "ok": true,
+      "load_ms": 1434.8749809996661,
+      "first_infer_ms": 48.509439000554266,
+      "total_s": 2.546069050999904
+    },
+    "reconnect": {
+      "ok": true,
+      "success": 10,
+      "cycles": 10
+    },
+    "alarm_latency": {
+      "ok": true,
+      "mean_ms": 0.1409586666341056,
+      "max_ms": 0.14937499963707523
+    },
+    "soak": {
+      "ok": true,
+      "minutes": 1.0005203525225321,
+      "frames": 992,
+      "fps_mean": 16.524734645976125,
+      "fps_min": 16.05,
+      "npu_infer_ms": 42.224945039315976,
+      "det_ms": 1.1808121169271926,
+      "read_fail": 0,
+      "rss_start": 768.0,
+      "rss_end": 941.1,
+      "rss_total_growth": 173.10000000000002,
+      "rss_tail_growth": 0.10000000000002274,
+      "rss_trend_mb_per_h": 13540.1242038849,
+      "rss_trend_tail_mb_per_h": NaN,
+      "rss_verdict": "inconclusive",
+      "fd_growth": 0,
+      "fd_trend_per_h": 9.802429532643434e-13,
+      "max_cpu_temp": NaN,
+      "max_npu_temp": 48.0,
+      "npu_alarm_growth": 0,
+      "csv": "/home/HwHiAiUser/fall_accept/20260910_220251/soak.csv"
+    }
+  }
+}

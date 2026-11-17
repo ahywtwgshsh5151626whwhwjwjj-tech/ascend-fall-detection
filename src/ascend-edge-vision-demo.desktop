@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ascend Edge Vision Demo
+Comment=昇腾边缘跌倒检测演示
+Exec=/home/HwHiAiUser/ascend-edge-vision-demo/start.sh
+Path=/home/HwHiAiUser/ascend-edge-vision-demo
+Terminal=false
+X-GNOME-Autostart-enabled=true
+Categories=AudioVideo;Education;

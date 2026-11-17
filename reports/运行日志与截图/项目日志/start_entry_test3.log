@@ -1,0 +1,8 @@
+[main_pose] ⚠ 未找到真实数据训练的 TCN, 暂时加载**合成数据**训练的模型。它只用于打通链路, 精度不可信; 采集真实数据后请重新训练到 runs/real。
+[main_pose] 摄像头: 告警设备 = default
+[main_pose] 已接管 npu_thread 与 ui_loop; 启动 GUI ...
+[main_pose] NPU 线程启动 (输入 4915200B / 输出 1881600B)
+[main_pose] 按键已绑定: 空格=撤销误报  回车=确认  m=静音
+摄像头已连接，索引: 0
+[main_pose] 取帧线程已启动 (实时监控)
+timeout: the monitored command dumped core

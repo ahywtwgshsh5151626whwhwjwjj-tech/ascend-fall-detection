@@ -1,0 +1,23 @@
+{
+  "time": "2026-09-10 21:48:15",
+  "thresholds": {
+    "cold_start_s": 30.0,
+    "fps_mean": 10.0,
+    "rss_growth_mb": 60.0,
+    "alarm_lat_ms": 200.0,
+    "reconnect": 10
+  },
+  "results": {
+    "cold_start": {
+      "ok": true,
+      "load_ms": 1463.2049430001643,
+      "first_infer_ms": 49.471729999822855,
+      "total_s": 2.58128067799953
+    },
+    "reconnect": {
+      "ok": true,
+      "success": 10,
+      "cycles": 10
+    },
+    "alarm_latency": {
+      "ok": 

@@ -1,0 +1,14 @@
+来源标记: real
+输出目录: /home/HwHiAiUser/fall_kpt_dataset_real
+片段数: 25  fall=10  normal=15
+
+  [5/25] ok=5 skip=0 fail=0  31s  (135帧 0.00有效)
+  [10/25] ok=10 skip=0 fail=0  61s  (135帧 0.03有效)
+  [15/25] ok=15 skip=0 fail=0  92s  (135帧 0.08有效)
+  [20/25] ok=20 skip=0 fail=0  123s  (135帧 0.22有效)
+  [25/25] ok=25 skip=0 fail=0  154s  (135帧 0.24有效)
+
+完成: 新抽 25  跳过 0  失败 0   用时 154s
+manifest: /home/HwHiAiUser/fall_kpt_dataset_real/manifest.jsonl  (25 条)
+npz 目录: /home/HwHiAiUser/fall_kpt_dataset_real/clips
+总大小: 0.2 MB

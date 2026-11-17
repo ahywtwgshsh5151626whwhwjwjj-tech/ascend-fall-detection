@@ -1,0 +1,19 @@
+来源标记: new
+输出目录: /home/HwHiAiUser/fall_kpt_dataset_new
+片段数: 47  custom=1  fall=20  normal=26
+
+  [5/47] ok=5 skip=0 fail=0  33s  (137帧 0.74有效)
+  [10/47] ok=10 skip=0 fail=0  64s  (134帧 0.92有效)
+  [15/47] ok=15 skip=0 fail=0  105s  (184帧 0.98有效)
+  [20/47] ok=20 skip=0 fail=0  148s  (181帧 0.65有效)
+  [25/47] ok=25 skip=0 fail=0  184s  (131帧 1.00有效)
+  [30/47] ok=30 skip=0 fail=0  215s  (129帧 1.00有效)
+  [35/47] ok=35 skip=0 fail=0  245s  (127帧 1.00有效)
+  [40/47] ok=40 skip=0 fail=0  284s  (173帧 1.00有效)
+  [45/47] ok=45 skip=0 fail=0  325s  (168帧 0.96有效)
+  [47/47] ok=47 skip=0 fail=0  341s  (167帧 1.00有效)
+
+完成: 新抽 47  跳过 0  失败 0   用时 341s
+manifest: /home/HwHiAiUser/fall_kpt_dataset_new/manifest.jsonl  (47 条)
+npz 目录: /home/HwHiAiUser/fall_kpt_dataset_new/clips
+总大小: 1.7 MB

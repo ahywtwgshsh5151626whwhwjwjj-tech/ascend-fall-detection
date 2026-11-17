@@ -1,0 +1,44 @@
+{
+  "time": "2026-09-10 21:50:02",
+  "thresholds": {
+    "cold_start_s": 30.0,
+    "fps_mean": 10.0,
+    "rss_growth_mb": 60.0,
+    "alarm_lat_ms": 200.0,
+    "reconnect": 10
+  },
+  "results": {
+    "cold_start": {
+      "ok": true,
+      "load_ms": 1453.0409389999477,
+      "first_infer_ms": 50.343608000730455,
+      "total_s": 2.571665536999717
+    },
+    "reconnect": {
+      "ok": true,
+      "success": 10,
+      "cycles": 10
+    },
+    "alarm_latency": {
+      "ok": true,
+      "mean_ms": 0.15681333358467478,
+      "max_ms": 0.17262500023207394
+    },
+    "soak": {
+      "ok": false,
+      "minutes": 1.0006208181381226,
+      "frames": 993,
+      "fps_mean": 16.53973183447747,
+      "fps_min": 16.15,
+      "npu_infer_ms": 42.10233145720644,
+      "det_ms": 3.277705993950309,
+      "read_fail": 0,
+      "rss_start": 768.3,
+      "rss_end": 941.4,
+      "rss_trend_mb_per_h": 13536.552846173716,
+      "fd_growth": 0,
+      "fd_trend_per_h": 9.802429532643434e-13,
+      "csv": "/home/HwHiAiUser/fall_accept/20260910_214842/soak.csv"
+    }
+  }
+}

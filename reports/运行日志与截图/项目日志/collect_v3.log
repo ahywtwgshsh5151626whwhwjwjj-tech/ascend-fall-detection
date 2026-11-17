@@ -1,0 +1,2 @@
+[camera] index=0 shape=(480, 640, 3)
+[beep] on hw:ascend310b

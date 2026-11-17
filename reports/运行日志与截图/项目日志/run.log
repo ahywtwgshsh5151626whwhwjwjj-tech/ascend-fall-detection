@@ -1,0 +1,1635 @@
+摄像头已连接，索引: 0
+NPU 推理线程启动成功
+[ WARN:0@892.960] global cap_v4l.cpp:889 requestBuffers VIDEOIO(V4L2:/dev/video0): failed VIDIOC_REQBUFS: errno=19 (No such device)
+摄像头读取失败，将自动重试
+摄像头已连接，索引: 0
+[ WARN:0@1029.030] global cap_v4l.cpp:889 requestBuffers VIDEOIO(V4L2:/dev/video0): failed VIDIOC_REQBUFS: errno=19 (No such device)
+摄像头读取失败，将自动重试
+[ WARN:0@1032.120] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1032.120] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1032.120] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1032.120] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1032.120] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1032.120] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1032.121] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1032.121] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1032.121] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1032.121] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1032.121] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1032.121] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1035.169] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1035.169] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1038.217] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1038.217] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1041.275] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1041.275] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1044.334] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1044.334] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.410] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1047.410] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.410] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1047.410] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.410] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1047.410] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.410] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1047.410] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.410] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1047.410] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1047.411] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1047.411] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1050.457] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1050.457] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.504] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1053.504] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.504] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1053.504] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.504] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1053.504] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.505] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1053.505] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.505] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1053.505] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1053.505] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1053.505] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1056.514] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1056.514] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1059.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1059.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.634] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1062.634] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.634] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1062.634] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.635] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1062.635] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.635] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1062.635] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.635] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1062.635] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1062.635] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1062.635] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.651] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1065.651] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.651] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1065.651] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.651] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1065.651] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.651] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1065.651] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.652] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1065.652] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1065.652] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1065.652] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.673] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1068.673] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.674] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1068.674] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.674] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1068.674] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.674] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1068.674] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.674] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1068.674] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1068.674] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1068.674] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.710] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1071.710] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.710] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1071.710] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.710] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1071.710] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.710] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1071.710] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.710] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1071.710] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1071.711] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1071.711] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1074.783] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1074.783] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1077.819] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1077.819] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.882] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1080.882] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.882] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1080.882] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.882] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1080.882] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.882] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1080.882] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.882] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1080.882] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1080.883] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1080.883] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1083.940] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1083.940] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.968] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1086.968] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.969] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1086.969] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.969] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1086.969] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.969] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1086.969] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.969] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1086.969] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1086.969] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1086.969] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.998] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1089.998] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.998] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1089.998] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.998] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1089.998] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.999] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1089.999] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.999] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1089.999] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1089.999] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1089.999] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.048] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1093.048] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.048] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1093.048] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.048] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1093.048] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.049] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1093.049] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.049] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1093.049] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1093.049] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1093.049] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.111] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1096.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1096.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1099.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1099.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.214] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1102.214] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.214] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1102.214] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.214] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1102.214] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.214] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1102.214] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.215] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1102.215] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1102.215] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1102.215] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.264] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1105.264] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.264] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1105.264] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.264] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1105.264] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.264] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1105.265] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.265] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1105.265] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1105.265] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1105.265] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1108.369] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1108.369] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1111.450] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1111.450] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1114.518] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1114.518] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.543] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1117.543] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.543] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1117.543] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.543] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1117.543] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.543] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1117.543] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.544] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1117.544] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1117.544] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1117.544] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.550] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1120.550] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.550] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1120.550] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.550] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1120.550] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.551] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1120.551] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.551] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1120.551] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1120.551] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1120.551] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1123.584] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1123.584] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1126.645] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1126.645] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1129.690] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1129.690] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1132.749] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1132.749] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.786] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1135.786] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.786] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1135.786] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.786] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1135.786] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.787] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1135.787] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.787] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1135.787] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1135.787] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1135.787] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1138.822] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1138.822] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.892] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1141.892] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.892] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1141.892] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.892] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1141.892] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.893] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1141.893] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.893] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1141.893] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1141.893] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1141.893] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1144.930] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1144.930] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.985] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1147.985] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.985] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1147.986] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.986] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1147.986] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.986] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1147.986] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.986] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1147.986] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1147.986] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1147.986] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1151.070] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1151.070] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1154.128] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1154.128] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.187] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1157.187] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.187] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1157.187] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.187] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1157.187] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.187] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1157.187] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1157.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1157.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1157.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.230] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1160.230] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.230] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1160.230] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.230] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1160.230] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.230] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1160.231] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.231] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1160.231] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1160.231] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1160.231] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.248] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1163.248] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.248] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1163.248] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.249] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1163.249] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.249] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1163.249] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.249] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1163.249] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1163.249] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1163.249] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1166.263] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1166.263] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1169.273] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1169.273] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1172.329] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1172.329] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1175.353] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1175.353] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.401] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1178.401] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.401] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1178.401] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.402] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1178.402] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.402] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1178.402] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.402] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1178.402] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1178.402] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1178.402] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.407] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.408] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.408] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.408] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.408] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1181.408] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1181.408] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1184.474] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1184.474] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1187.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1187.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1190.571] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1190.571] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.614] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1193.614] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.614] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1193.614] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1193.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1193.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1193.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1193.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1193.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.656] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.657] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.657] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.657] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.657] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1196.657] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1196.657] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1199.692] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1199.692] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1202.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1202.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.767] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1205.767] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.767] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1205.768] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.768] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1205.768] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.768] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1205.768] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.768] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1205.768] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1205.768] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1205.768] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1208.774] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1208.774] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.777] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1211.777] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.777] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1211.777] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.777] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1211.777] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.777] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1211.778] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.778] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1211.778] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1211.778] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1211.778] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1214.808] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1214.808] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.844] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1217.844] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.844] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1217.844] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.844] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1217.844] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.845] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1217.845] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.845] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1217.845] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1217.845] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1217.845] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1220.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1220.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.952] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1223.952] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.953] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1223.953] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.953] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1223.953] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.953] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1223.953] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.953] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1223.953] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1223.953] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1223.953] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.035] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.036] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.036] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.036] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.036] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1227.036] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1227.036] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.111] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1230.111] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1230.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1230.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1230.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1230.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1230.112] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1230.112] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.193] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1233.193] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.193] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1233.193] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.193] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1233.193] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.194] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1233.194] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.194] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1233.194] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1233.194] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1233.194] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1236.225] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1236.225] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.300] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1239.300] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.301] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1239.301] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.301] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1239.301] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.301] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1239.301] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.301] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1239.301] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1239.301] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1239.301] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1242.370] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1242.370] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1245.447] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1245.447] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.510] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1248.510] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1248.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1248.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1248.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1248.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1248.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1248.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1251.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1251.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.511] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1251.511] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1251.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1251.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1251.512] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1251.512] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.565] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1254.565] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.566] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1254.566] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.566] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1254.566] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.566] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1254.566] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.566] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1254.566] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1254.566] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1254.566] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1257.615] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1257.615] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.695] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1260.695] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1260.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1260.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1260.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1260.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1260.696] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1260.696] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1263.713] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1263.713] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.727] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1266.727] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.727] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1266.727] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.727] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1266.727] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.727] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1266.728] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.728] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1266.728] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1266.728] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1266.728] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1269.792] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1269.792] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.798] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1272.798] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.798] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1272.798] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.798] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1272.798] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.798] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1272.798] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.799] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1272.799] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1272.799] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1272.799] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1275.801] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1275.801] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.857] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1278.857] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.857] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1278.857] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.857] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1278.857] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.858] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1278.858] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.858] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1278.858] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1278.858] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1278.858] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.933] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.934] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.934] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.934] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.934] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1281.934] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1281.934] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.966] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1284.966] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.966] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1284.966] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.966] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1284.966] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.967] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1284.967] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.967] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1284.967] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1284.967] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1284.967] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1288.047] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1288.047] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1291.062] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1291.062] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1294.104] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1294.104] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1297.176] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1297.176] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.241] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1300.241] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.242] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1300.242] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.242] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1300.242] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.242] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1300.242] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.242] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1300.242] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1300.242] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1300.242] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1303.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1303.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1306.356] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1306.356] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1309.414] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1309.414] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1312.485] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1312.485] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1315.541] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1315.541] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1318.583] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1318.583] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.598] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1321.598] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.598] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1321.598] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.598] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1321.598] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.599] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1321.599] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.599] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1321.599] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1321.599] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1321.599] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1324.600] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1324.600] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1327.624] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1327.624] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1330.658] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1330.658] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.667] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.668] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.668] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.668] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.668] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1333.668] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1333.668] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1336.753] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1336.753] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.829] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1339.829] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.829] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1339.829] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.829] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1339.829] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.830] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1339.830] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.830] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1339.830] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1339.830] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1339.830] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.835] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.836] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.836] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.836] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.836] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1342.836] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1342.836] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1345.873] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1345.873] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1348.954] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1348.954] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1348.954] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1348.954] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1348.954] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1348.954] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1348.955] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.018] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1352.018] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.018] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1352.018] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.018] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1352.018] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.018] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1352.019] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.019] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1352.019] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1352.019] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1352.019] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1355.100] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1355.100] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.114] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1358.114] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.114] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1358.114] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.115] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1358.115] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.115] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1358.115] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.115] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1358.115] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1358.115] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1358.115] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1361.119] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1361.119] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.129] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1364.129] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.129] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1364.129] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.130] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1364.130] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.130] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1364.130] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.130] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1364.130] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1364.130] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1364.130] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1367.142] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1367.142] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1370.143] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1370.143] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1373.188] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1373.188] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.269] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.270] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.270] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.270] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.270] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1376.270] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1376.270] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.277] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1379.277] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.277] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1379.277] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1379.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1379.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1379.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1379.278] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1379.278] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1382.286] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1382.286] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1385.309] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1385.309] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.378] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1388.378] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.379] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1388.379] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.379] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1388.379] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.379] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1388.379] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.379] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1388.379] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1388.379] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1388.379] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1391.459] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1391.459] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.478] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1394.478] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.479] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1394.479] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.479] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1394.479] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.479] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1394.479] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.479] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1394.479] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1394.479] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1394.479] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1397.490] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1397.490] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.552] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.553] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.553] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.553] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.553] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1400.553] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1400.553] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1403.630] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1403.630] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1406.712] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1406.712] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1409.771] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1409.771] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1412.839] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1412.839] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.866] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1415.866] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.867] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1415.867] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.867] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1415.867] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.867] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1415.867] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.867] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1415.867] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1415.867] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1415.867] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1418.987] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1418.987] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1422.145] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1422.145] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+摄像头已连接，索引: 0
+[ WARN:0@1427.604] global cap_v4l.cpp:889 requestBuffers VIDEOIO(V4L2:/dev/video0): failed VIDIOC_REQBUFS: errno=19 (No such device)
+摄像头读取失败，将自动重试
+[ WARN:0@1430.604] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1430.604] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1430.605] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1430.605] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1430.605] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1430.605] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1430.605] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1430.605] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1430.605] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1430.605] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1430.605] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1430.605] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+摄像头已连接，索引: 0
+[ WARN:0@1442.966] global cap_v4l.cpp:889 requestBuffers VIDEOIO(V4L2:/dev/video0): failed VIDIOC_REQBUFS: errno=19 (No such device)
+摄像头读取失败，将自动重试
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1446.025] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1446.025] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1449.069] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1449.069] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1452.148] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1452.148] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1455.232] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1455.232] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.249] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.250] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video1): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.250] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.250] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video3): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.250] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video4): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[ WARN:0@1458.250] global cap_v4l.cpp:999 open VIDEOIO(V4L2:/dev/video5): can't open camera by index
+[ WARN:0@1458.250] global cap.cpp:342 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+摄像头已连接，索引: 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

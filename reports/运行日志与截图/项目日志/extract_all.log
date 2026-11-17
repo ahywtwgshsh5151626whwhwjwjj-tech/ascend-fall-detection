@@ -1,0 +1,20 @@
+来源标记: real_all
+输出目录: /home/HwHiAiUser/fall_kpt_dataset_all
+片段数: 51  custom=1  fall=20  normal=30
+
+  [5/51] ok=5 skip=0 fail=0  30s  (135帧 0.02有效)
+  [10/51] ok=10 skip=0 fail=0  60s  (135帧 0.01有效)
+  [15/51] ok=15 skip=0 fail=0  95s  (137帧 0.74有效)
+  [20/51] ok=20 skip=0 fail=0  127s  (134帧 0.92有效)
+  [25/51] ok=25 skip=0 fail=0  158s  (135帧 0.37有效)
+  [30/51] ok=30 skip=0 fail=0  188s  (135帧 0.40有效)
+  [35/51] ok=35 skip=0 fail=0  219s  (135帧 0.02有效)
+  [40/51] ok=40 skip=0 fail=0  253s  (131帧 1.00有效)
+  [45/51] ok=45 skip=0 fail=0  284s  (129帧 1.00有效)
+  [50/51] ok=50 skip=0 fail=0  314s  (127帧 1.00有效)
+  [51/51] ok=51 skip=0 fail=0  320s  (126帧 1.00有效)
+
+完成: 新抽 51  跳过 0  失败 0   用时 320s
+manifest: /home/HwHiAiUser/fall_kpt_dataset_all/manifest.jsonl  (51 条)
+npz 目录: /home/HwHiAiUser/fall_kpt_dataset_all/clips
+总大小: 1.1 MB

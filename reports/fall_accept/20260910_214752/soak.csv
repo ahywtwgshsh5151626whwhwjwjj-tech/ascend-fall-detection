@@ -1,0 +1,1 @@
+t_s,fps,fps_avg,rss_mb,fds,cpu_temp,npu_temp,frames,read_fail,npu_infer_ms,det_ms,state,alert

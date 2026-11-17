@@ -1,0 +1,25 @@
+来源标记: v3
+输出目录: /home/HwHiAiUser/fall_kpt_dataset_v3
+片段数: 78  custom=1  fall=43  normal=34
+
+  [5/78] ok=5 skip=0 fail=0  33s  (137帧 0.74有效)
+  [10/78] ok=10 skip=0 fail=0  65s  (134帧 0.92有效)
+  [15/78] ok=15 skip=0 fail=0  106s  (184帧 0.98有效)
+  [20/78] ok=20 skip=0 fail=0  150s  (181帧 0.65有效)
+  [25/78] ok=25 skip=0 fail=0  182s  (123帧 0.21有效)
+  [30/78] ok=30 skip=0 fail=0  209s  (101帧 1.00有效)
+  [35/78] ok=35 skip=0 fail=0  233s  (101帧 1.00有效)
+  [40/78] ok=40 skip=0 fail=0  258s  (101帧 0.96有效)
+  [45/78] ok=45 skip=0 fail=0  286s  (186帧 1.00有效)
+  [50/78] ok=50 skip=0 fail=0  317s  (130帧 1.00有效)
+  [55/78] ok=55 skip=0 fail=0  348s  (128帧 1.00有效)
+  [60/78] ok=60 skip=0 fail=0  380s  (179帧 1.00有效)
+  [65/78] ok=65 skip=0 fail=0  422s  (171帧 0.90有效)
+  [70/78] ok=70 skip=0 fail=0  463s  (167帧 1.00有效)
+  [75/78] ok=75 skip=0 fail=0  493s  (123帧 1.00有效)
+  [78/78] ok=78 skip=0 fail=0  511s  (123帧 1.00有效)
+
+完成: 新抽 78  跳过 0  失败 0   用时 511s
+manifest: /home/HwHiAiUser/fall_kpt_dataset_v3/manifest.jsonl  (78 条)
+npz 目录: /home/HwHiAiUser/fall_kpt_dataset_v3/clips
+总大小: 2.6 MB

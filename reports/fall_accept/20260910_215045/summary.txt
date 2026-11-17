@@ -1,0 +1,4 @@
+cold_start: {"ok": true, "load_ms": 1440.0415400004931, "first_infer_ms": 49.292937999780406, "total_s": 2.555676394999864}
+reconnect: {"ok": true, "success": 10, "cycles": 10}
+alarm_latency: {"ok": true, "mean_ms": 0.17648000023958352, "max_ms": 0.2581469998403918}
+soak: {"ok": true, "minutes": 10.000579571723938, "frames": 9933, "fps_mean": 16.554040574616604, "fps_min": 16.13, "npu_infer_ms": 41.95222394794981, "det_ms": 1.2851419356697962, "read_fail": 0, "rss_start": 767.9, "rss_end": 942.7, "rss_total_growth": 174.80000000000007, "rss_tail_growth": 1.0, "rss_trend_mb_per_h": 134.56600564227588, "rss_trend_tail_mb_per_h": 11.92213226115652, "rss_verdict": "stable", "fd_growth": 0, "fd_trend_per_h": 3.216126629748192e-14, "max_cpu_temp": NaN, "max_npu_temp": 49.0, "csv": "/home/HwHiAiUser/fall_accept/20260910_215045/soak.csv"}

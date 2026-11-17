@@ -1,0 +1,6 @@
+[main_pose] 摄像头: 告警设备 = hw:1,0
+[main_pose] 已接管 npu_thread 与 ui_loop; 启动 GUI ...
+[main_pose] NPU 线程启动 (输入 4915200B / 输出 1881600B)
+[main_pose] 按键已绑定: 空格=撤销误报  回车=确认  m=静音
+摄像头已连接，索引: 0
+[main_pose] 取帧线程已启动 (实时监控)

@@ -1,0 +1,18 @@
+[main_pose] 摄像头: 告警设备 = hw:2,0
+摄像头已连接，索引: 0
+[headless] 摄像头已打开, 开始跑链路 ...
+
+[headless] 共 807 帧, 用时 60.2s
+[headless] 端到端 FPS: mean 13.8  median 13.5  min 11.4
+[headless] 引擎状态分布: {'NORMAL': 42}
+[headless] 最终告警状态: IDLE
+[headless] 导出目录: /home/HwHiAiUser/fall_ai_headless
+    frame_00_IDLE.jpg
+    frame_01_IDLE.jpg
+    frame_02_ALERTING_L1.jpg
+    frame_03_ALERTING_L1.jpg
+    frame_04_ALERTING_L1.jpg
+    frame_05_ALERTING_L1.jpg
+    frame_06_ALERTING_L1.jpg
+    frame_07_ALERTING_L1.jpg
+    headless.avi

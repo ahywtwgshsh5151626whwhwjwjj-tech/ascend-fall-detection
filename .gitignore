@@ -1,0 +1,36 @@
+# 视频、现场截图和原始采集数据不上传
+*.avi
+*.mp4
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.xwd
+
+# 运行时缓存和 Python 生成物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# 本地运行日志和临时输出
+*.log
+*.tmp
+*.swp
+rehab_logs/
+fall_dataset/
+fall_dataset_round2/
+fall_kpt_*/
+
+# 本机/IDE 文件
+.vscode/
+.idea/
+*.user
+*.suo
+
+# 本地凭据
+.env
+*.pem
+*.key
+id_rsa*

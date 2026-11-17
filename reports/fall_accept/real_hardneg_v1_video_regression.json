@@ -1,0 +1,310 @@
+{
+  "model": "/home/HwHiAiUser/ascend-edge-vision-demo/fall_ai/runs/real_hardneg_v1/tcn_fall.npz",
+  "rows": [
+    {
+      "label": "hardneg",
+      "clip": "hardneg_20260912_012615_000.avi",
+      "frames": 131,
+      "alerts": 0,
+      "max_fused": 0.096,
+      "max_rule": 0.096,
+      "max_tcn": -1.0,
+      "states": {
+        "NORMAL": 9
+      }
+    },
+    {
+      "label": "hardneg",
+      "clip": "hardneg_20260912_014636_001.avi",
+      "frames": 118,
+      "alerts": 1,
+      "max_fused": 0.87,
+      "max_rule": 0.712,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 19,
+        "FALLING": 8,
+        "CONFIRMED": 64
+      }
+    },
+    {
+      "label": "hardneg",
+      "clip": "hardneg_20260912_015607_002.avi",
+      "frames": 115,
+      "alerts": 0,
+      "max_fused": 0.3,
+      "max_rule": 0.1,
+      "max_tcn": 0.999,
+      "states": {
+        "NORMAL": 114
+      }
+    },
+    {
+      "label": "hardneg",
+      "clip": "hardneg_20260912_021329_003.avi",
+      "frames": 116,
+      "alerts": 0,
+      "max_fused": 0.623,
+      "max_rule": 0.167,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 104,
+        "FALLING": 5
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163009_030.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.87,
+      "max_rule": 0.745,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 67,
+        "SUSPECT": 7,
+        "FALLING": 4,
+        "CONFIRMED": 23
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163031_031.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.92,
+      "max_rule": 0.827,
+      "max_tcn": 0.999,
+      "states": {
+        "NORMAL": 92,
+        "FALLING": 9
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163052_032.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.914,
+      "max_rule": 0.81,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 38,
+        "FALLING": 4,
+        "CONFIRMED": 59
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163116_033.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.989,
+      "max_rule": 0.977,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 53,
+        "SUSPECT": 6,
+        "FALLING": 4,
+        "CONFIRMED": 38
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163143_034.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.774,
+      "max_rule": 0.65,
+      "max_tcn": 0.999,
+      "states": {
+        "NORMAL": 99,
+        "FALLING": 2
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163208_035.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.943,
+      "max_rule": 0.873,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 71,
+        "FALLING": 4,
+        "CONFIRMED": 26
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163249_036.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.54,
+      "max_rule": 0.65,
+      "max_tcn": 0.936,
+      "states": {
+        "NORMAL": 94,
+        "SUSPECT": 3
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163309_037.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.802,
+      "max_rule": 0.65,
+      "max_tcn": 0.926,
+      "states": {
+        "NORMAL": 54,
+        "SUSPECT": 36,
+        "FALLING": 9
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163328_038.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.945,
+      "max_rule": 0.878,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 67,
+        "SUSPECT": 9,
+        "FALLING": 4,
+        "CONFIRMED": 20
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163347_039.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.952,
+      "max_rule": 0.903,
+      "max_tcn": 0.998,
+      "states": {
+        "NORMAL": 42,
+        "SUSPECT": 10,
+        "FALLING": 4,
+        "CONFIRMED": 41
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163405_040.avi",
+      "frames": 101,
+      "alerts": 1,
+      "max_fused": 0.897,
+      "max_rule": 0.771,
+      "max_tcn": 1.0,
+      "states": {
+        "NORMAL": 20,
+        "SUSPECT": 24,
+        "FALLING": 4,
+        "CONFIRMED": 50
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163431_041.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.508,
+      "max_rule": 0.122,
+      "max_tcn": 0.913,
+      "states": {
+        "NORMAL": 85,
+        "SUSPECT": 16
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163454_042.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.414,
+      "max_rule": 0.1,
+      "max_tcn": 0.888,
+      "states": {
+        "NORMAL": 101
+      }
+    },
+    {
+      "label": "fall",
+      "clip": "fall_20260911_163512_043.avi",
+      "frames": 101,
+      "alerts": 0,
+      "max_fused": 0.516,
+      "max_rule": 0.099,
+      "max_tcn": 0.946,
+      "states": {
+        "NORMAL": 78,
+        "SUSPECT": 23
+      }
+    },
+    {
+      "label": "normal",
+      "clip": "normal_20260911_095810_027.avi",
+      "frames": 123,
+      "alerts": 0,
+      "max_fused": 0.3,
+      "max_rule": 0.1,
+      "max_tcn": 0.744,
+      "states": {
+        "NORMAL": 123
+      }
+    },
+    {
+      "label": "normal",
+      "clip": "normal_20260911_095823_028.avi",
+      "frames": 124,
+      "alerts": 0,
+      "max_fused": 0.1,
+      "max_rule": 0.1,
+      "max_tcn": 0.912,
+      "states": {
+        "NORMAL": 75
+      }
+    },
+    {
+      "label": "normal",
+      "clip": "normal_20260911_095850_029.avi",
+      "frames": 123,
+      "alerts": 0,
+      "max_fused": 0.1,
+      "max_rule": 0.1,
+      "max_tcn": 0.99,
+      "states": {
+        "NORMAL": 117
+      }
+    },
+    {
+      "label": "normal",
+      "clip": "normal_20260911_095903_030.avi",
+      "frames": 123,
+      "alerts": 0,
+      "max_fused": 0.1,
+      "max_rule": 0.1,
+      "max_tcn": 0.861,
+      "states": {
+        "NORMAL": 123
+      }
+    },
+    {
+      "label": "normal",
+      "clip": "normal_20260911_095949_031.avi",
+      "frames": 123,
+      "alerts": 0,
+      "max_fused": 0.3,
+      "max_rule": 0.1,
+      "max_tcn": 0.966,
+      "states": {
+        "NORMAL": 123
+      }
+    }
+  ]
+}

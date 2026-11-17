@@ -1,0 +1,706 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+fall_engine.py — W5 融合决策引擎
+
+把三样东西合成一条判决链路:
+
+    每帧:  PoseFallDetector  ->  姿态几何 + 规则判据 (触发/不触发)
+             ↓ 组装 54 维特征
+           滑窗缓冲 30 帧 (1 秒)
+             ↓ 每 tcn_every 帧跑一次
+           NumpyTCN  ->  跌倒概率 p_fall   ★ 区分"跌倒"与"缓慢躺下"的关键
+             ↓
+    融合:  fused = w_rule * rule_score + w_tcn * p_fall
+             ↓
+    状态机: NORMAL -> SUSPECT -> FALLING -> CONFIRMED -> (RECOVERED)
+             ↓ CONFIRMED
+          AlarmManager (W6.3 分级告警 + 撤销窗口 + hard-negative 回流)
+
+为什么必须融合而不是只用 TCN:
+  TCN 单帧证据弱(它看的是整段动作), 规则判据在"定格"场景下更直接。
+  两者互补: 规则抓"现在像不像躺着", TCN 抓"这个动作有多快"。
+
+为什么 TCN 未就绪时**不允许确认**:
+  时序信息正是区分"跌倒"和"缓慢躺下"的唯一依据。没有它, 确认就等于退回
+  旧判据, 会把缓慢躺下误报成跌倒 —— 正是本工程要解决的问题。
+  所以 TCN 未就绪时最多到 SUSPECT(不出声)。
+
+用法(自测, 不需要相机/NPU):
+    python3 fall_engine.py --selftest
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import math
+import os
+import sys
+import time
+
+import numpy as np
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pose_fall_detector import (PoseFallDetector, torso_features,  # noqa: E402
+                                MODEL_INPUT)
+from tcn_fall import NumpyTCN, build_input, N_POSE, WIN, N_CH      # noqa: E402
+from alarm_manager import AlarmManager                             # noqa: E402
+
+NORMAL, SUSPECT, FALLING, CONFIRMED, RECOVERED = (
+    "NORMAL", "SUSPECT", "FALLING", "CONFIRMED", "RECOVERED")
+_RANK = {NORMAL: 0, SUSPECT: 1, FALLING: 2, CONFIRMED: 3, RECOVERED: 0}
+
+# DEGRADED 路径的角度一致性衰减参数(见 rule_score 里的说明)
+STAND_ANGLE_REF = 35.0          # 达到此角度视为"确实躺下", 不再衰减
+DEGRADED_UPRIGHT_FLOOR = 0.30   # 角度为 0 时的衰减下限(不归零)
+
+
+# ------------------------------------------------------------------ 单帧特征
+def frame_feature(info, orig_w, orig_h, last_scale=None):
+    """从 detector 的 info 组装 TCN 输入列 (54,) 与新的尺度。
+
+    与 extract_kpts.py 的归一化保持一致: 逐帧以髋中点为原点、以躯干长为尺度。
+    info["kpts"] 是 640x640 模型空间, 先映射回原始图像坐标。
+    """
+    sx, sy = orig_w / float(MODEL_INPUT), orig_h / float(MODEL_INPUT)
+    km = np.asarray(info["kpts"], np.float32).copy()
+    kr = km.copy()
+    kr[:, 0] *= sx
+    kr[:, 1] *= sy
+
+    feat = torso_features(km, orig_w, orig_h, 0.35)
+    sh = np.array([(kr[5][0] + kr[6][0]) / 2.0, (kr[5][1] + kr[6][1]) / 2.0])
+    hp = np.array([(kr[11][0] + kr[12][0]) / 2.0, (kr[11][1] + kr[12][1]) / 2.0])
+
+    scale = last_scale
+    if min(km[5][2], km[6][2], km[11][2], km[12][2]) >= 0.35:
+        L = float(np.hypot(*(hp - sh)))
+        diag = math.hypot(orig_w, orig_h)
+        if 0.06 * diag <= L <= 0.55 * diag:
+            scale = L
+    if scale is None:
+        bh = float(info["box"][3] - info["box"][1]) * sy
+        scale = max(bh * 0.45, 10.0)
+
+    k = np.zeros((17, 3), np.float32)
+    k[:, 0] = (kr[:, 0] - hp[0]) / scale
+    k[:, 1] = (kr[:, 1] - hp[1]) / scale
+    k[:, 2] = kr[:, 2]
+
+    extra = np.array([[float(hp[1]) / orig_h,
+                       float(info.get("model_aspect_640", 1.0)),
+                       float(info.get("model_score", 0.0)),
+                       float(feat["kscore"])]], np.float32)
+    x = build_input(k[None], extra, np.array([1.0], np.float32))[:, 0]
+    return x.astype(np.float32), scale
+
+
+# ------------------------------------------------------------------ 引擎
+class FallEngine:
+    def __init__(self, det=None, tcn=None, alarm=None,
+                 w_rule=0.45, w_tcn=0.55,
+                 suspect_score=0.50, confirm_score=0.65, recover_score=0.35,
+                 confirm_hold=0.5, recover_time=1.5, upright_veto_score=0.30,
+                 tcn_rule_gate=0.18, tcn_rule_floor=0.10,
+                 track_lock_grace=0.8,
+                 stand_angle=35.0,
+                 tcn_every=3, tcn_min_fill=0.5, fps=30.0,
+                 ring_seconds=12.0, hard_neg_dir=None, log=print, **det_kw):
+        self.det = det if det is not None else PoseFallDetector(**det_kw)
+        self.tcn = tcn
+        self.alarm = alarm if alarm is not None else AlarmManager(log=log)
+        self.w_rule = w_rule
+        self.w_tcn = w_tcn
+        self.suspect_score = suspect_score
+        self.confirm_score = confirm_score
+        self.recover_score = recover_score
+        self.confirm_hold = confirm_hold
+        self.recover_time = recover_time
+        self.upright_veto_score = upright_veto_score
+        # A high TCN score alone is not sufficient for an alarm. This gate
+        # prevents the observed false positives where bending/leaning produced
+        # rule≈0.04 but TCN≈1.00. Strong geometric evidence (rule >= gate)
+        # passes unchanged; weak rule evidence is capped below confirmation.
+        self.tcn_rule_gate = tcn_rule_gate
+        self.tcn_rule_floor = tcn_rule_floor
+        self.track_lock_grace = track_lock_grace
+        self.stand_angle = stand_angle
+        self.tcn_every = tcn_every
+        self.tcn_min_fill = tcn_min_fill
+        self.fps = fps
+        self.log = log
+
+        self.buffers = collections.defaultdict(lambda: collections.deque(maxlen=WIN))
+        # 运行时摄像头通常只有 13~17 FPS，而 TCN 是按 30 FPS、30 帧窗口训练的。
+        # 仅按“收到的帧数”喂给 TCN 会把 1 秒窗口拉长到约 1.8 秒，动作速度
+        # 因而与训练分布不一致。这里保留带时间戳的特征历史，推理前按真实时间
+        # 插值到固定的 30 帧时间轴；buffers 继续保留用于兼容旧日志/UI。
+        self.feature_hist = collections.defaultdict(
+            lambda: collections.deque(maxlen=max(90, int(math.ceil(self.fps * 3.0))))
+        )
+        self.tcn_prob = {}
+        self.state = NORMAL
+        self.t_state = None
+        self.t_clear = None
+        self.frame_i = 0
+        self.last = None
+        self.frames = collections.deque(maxlen=int(ring_seconds * fps))
+        self.hard_neg_dir = hard_neg_dir or os.path.expanduser(
+            "~/fall_dataset/hard_negative")
+        self.hard_neg_saved = []
+        # 人工确认/取消后进入重新武装等待。只有检测到人重新站立并保持
+        # recover_time，才允许下一次跌倒进入确认，避免同一次倒地循环播报。
+        self.rearm_required = False
+        self.rearm_since = None
+        # Once a track enters FALLING, keep using that track briefly even when
+        # another person/background track has a higher instantaneous score.
+        # This prevents a bystander from stealing the global confirmation timer.
+        self.locked_tid = None
+        self.locked_since = None
+        self.locked_last_t = None
+
+    def _resampled_window(self, tid, now):
+        """将轨迹特征按时间插值为训练使用的 (WIN, 54) 窗口。
+
+        返回 (seq, duration)。duration 是当前轨迹历史覆盖的真实秒数。
+        窗口不足一秒时，np.interp 会以前后端点填充，等价于原先的首帧
+        padding，但不会把低帧率采集误当成 30 FPS。
+        """
+        hist = list(self.feature_hist.get(tid, ()))
+        if not hist:
+            return None, 0.0
+
+        # 只使用当前时刻以前的样本；去掉重复时间戳，避免插值时出现非严格单调轴。
+        hist = [(float(ts), np.asarray(x, np.float32))
+                for ts, x in hist if float(ts) <= float(now) + 1e-6]
+        if not hist:
+            return None, 0.0
+        hist.sort(key=lambda p: p[0])
+        uniq_t, uniq_x = [], []
+        for ts, x in hist:
+            if uniq_t and ts <= uniq_t[-1] + 1e-6:
+                uniq_t[-1] = ts
+                uniq_x[-1] = x
+            else:
+                uniq_t.append(ts)
+                uniq_x.append(x)
+        if len(uniq_t) == 1:
+            return np.repeat(uniq_x[0][None, :], WIN, axis=0), 0.0
+
+        ts = np.asarray(uniq_t, np.float64)
+        xs = np.stack(uniq_x).astype(np.float32)
+        duration = max(0.0, float(ts[-1] - ts[0]))
+        end = float(now)
+        start = end - (WIN - 1) / float(self.fps)
+        grid = np.linspace(start, end, WIN, dtype=np.float64)
+        seq = np.empty((WIN, xs.shape[1]), np.float32)
+        for j in range(xs.shape[1]):
+            seq[:, j] = np.interp(grid, ts, xs[:, j]).astype(np.float32)
+        return seq, duration
+
+    # ---------------------------------------------------------- 规则连续分
+    @staticmethod
+    def rule_score(info):
+        """把规则判据的离散输出转成连续 0~1。"""
+        mode = info.get("mode", "")
+        if mode == "REJECT":
+            return 0.0
+        ang = info.get("angle", float("nan"))
+        hip = float(info.get("hip_norm", 0.0))
+        ref = info.get("upright_ref")
+        drop = float(info.get("drop", 0.0))
+
+        if mode == "POSE" and not math.isnan(ang):
+            a_ev = float(np.clip((ang - 35.0) / 50.0, 0.0, 1.0))     # 35~85°
+            h_ev = float(np.clip((hip - 0.45) / 0.40, 0.0, 1.0))     # 0.45~0.85
+            if ref is not None:
+                h_ev = max(h_ev, float(np.clip((hip - ref) / 0.25, 0.0, 1.0)))
+            s = 0.65 * a_ev * (0.4 + 0.6 * h_ev) + 0.35 * a_ev * h_ev
+        elif mode == "DEGRADED":
+            asp = float(info.get("model_aspect_640", 1.0))
+            a_ev = float(np.clip((asp - 1.0) / 0.8, 0.0, 1.0))
+            d_ev = float(np.clip(drop / 0.20, 0.0, 1.0))
+            s = 0.4 * a_ev * d_ev + 0.3 * d_ev + 0.3 * min(a_ev, d_ev)
+            # ★ 角度一致性衰减 (2026-09-11 实测驱动)
+            #
+            # 场景: 10 分钟真实审计里, 所有 rule>=0.20 的帧(15/15)都来自
+            # DEGRADED 路径, 其中最高的一簇(t=458.4~459.0, 11 帧连发):
+            #     rule=0.448  angle=1.54°  hip=1.054  drop=0.311  kscore=0.34
+            # 人**完全直立**(1.54°)却拿到 0.448 —— 因为 DEGRADED 分支只看
+            # 横比和下坠, 完全忽略了 angle 这个直接证据。
+            # 对比: POSE 路径 1225 帧的 max 只有 0.129, p99=0.000。
+            # 这就是旧判据"直立被判跌倒"的误报机制在 DEGRADED 里的残留。
+            #
+            # 处理: 有可用角度时按角度一致性**连续衰减**, 不硬否决 ——
+            #   angle=1.5°  -> 0.30 倍  (0.448 -> 0.134, 远离 0.50 疑似线)
+            #   angle=17°   -> 0.49 倍
+            #   angle>=35°  -> 1.00 倍  (真跌倒角度大, 完全不受影响)
+            # 下限 0.30 而非直接归零: DEGRADED 的存在意义就是"姿态不可信、
+            # 靠横比兜底", 保留一点分值以防角度本身被垃圾关键点带偏。
+            if not math.isnan(ang):
+                s *= float(np.clip(ang / STAND_ANGLE_REF,
+                                   DEGRADED_UPRIGHT_FLOOR, 1.0))
+        else:                                     # WARMUP 或未知
+            s = 0.10
+        kq = float(np.clip(info.get("kpt_score", 0.5), 0.0, 1.0))
+        s *= (0.6 + 0.4 * kq)
+        if info.get("trigger"):
+            s = max(s, 0.65)                      # 规则明确触发 -> 至少 0.65
+        return float(np.clip(s, 0.0, 1.0))
+
+    # ---------------------------------------------------------- 融合
+    def _fuse(self, info, tid):
+        rule = self.rule_score(info)
+        p = self.tcn_prob.get(tid)
+        ready = p is not None
+        if ready:
+            fused = self.w_rule * rule + self.w_tcn * float(p)
+        else:
+            fused = rule
+        # Cropped-edge and multi-person tracks are explicitly blocked by the
+        # detector. Do not let a high TCN probability override that veto.
+        if info.get("mode") in ("EDGE_CROP", "MULTI_PERSON", "BLOCKED"):
+            fused = 0.0
+        elif ready and rule < self.tcn_rule_gate:
+            # Keep a weak TCN signal useful for SUSPECT, but never allow it to
+            # reach the confirmation threshold without geometric evidence.
+            weak_cap = max(self.tcn_rule_floor,
+                           min(self.confirm_score - 1e-6,
+                               self.suspect_score + 0.04))
+            fused = min(fused, weak_cap)
+        # 直立否决: 姿态路径生效且躯干明确直立时, 不允许 TCN 的误报把分数抬起来。
+        # 理由: 规则在"明显直立"这个方向上几乎不会错(实测直立人躯干角 2°),
+        # 而 TCN 偶尔会在走动/弯腰等动作上给出高分(合成数据里 walk 最高 0.43)。
+        # 注意: mode=="POSE" 本身就已蕴含姿态可信(_decide 里只在 pose_trust 时设),
+        # 所以这里不再依赖 pose_ok 字段, 避免字段缺失时静默失效。
+        ang = info.get("angle", float("nan"))
+        if info.get("mode") == "POSE" and not math.isnan(ang) \
+                and ang < self.stand_angle:
+            fused = min(fused, self.upright_veto_score)
+        # TCN 未就绪时不允许确认: 见模块 docstring 的说明
+        if self.tcn is not None and not ready:
+            fused = min(fused, self.confirm_score - 1e-6)
+        return float(fused), rule, (None if p is None else float(p)), ready
+
+    # ---------------------------------------------------------- 状态机
+    def _is_upright(self, info):
+        """判断当前主轨迹是否已恢复到可靠直立姿态。"""
+        if not info or info.get("mode") != "POSE":
+            return False
+        angle = info.get("angle", float("nan"))
+        return bool(
+            info.get("pose_ok", False)
+            and not math.isnan(angle)
+            and angle < self.stand_angle
+        )
+
+    def _advance(self, t, fused):
+        nxt = self.state
+        if fused >= self.confirm_score:
+            self.t_clear = None
+            if self.state in (NORMAL, SUSPECT, RECOVERED):
+                nxt = FALLING
+                self.t_state = t
+            elif self.state == FALLING:
+                if t - self.t_state >= self.confirm_hold:
+                    nxt = CONFIRMED
+        elif fused >= self.suspect_score:
+            self.t_clear = None
+            if self.state in (NORMAL, RECOVERED):
+                nxt = SUSPECT
+                self.t_state = t
+            elif self.state == FALLING:
+                nxt = FALLING                    # 已进入 FALLING 就不因轻微回落降级
+        else:
+            if self.state in (SUSPECT, FALLING):
+                if self.t_state is None or t - self.t_state >= self.recover_time:
+                    nxt = NORMAL
+                    self.t_state = None
+            elif self.state == CONFIRMED:
+                # 人站起来了 -> 引擎状态复位, 保证新跌倒能被检测到。
+                # 注意: 告警本身**不会**因此停止 —— 无人应答时它继续升级,
+                # 这正是无人看护场景需要的("人自己爬起来了"也必须让人知道)。
+                if self.t_clear is None:
+                    self.t_clear = t
+                elif t - self.t_clear >= self.recover_time:
+                    nxt = RECOVERED
+                    self.t_clear = None
+                    self.t_state = None
+        self.state = nxt
+        return nxt
+
+    # ---------------------------------------------------------- 用户操作
+    def on_key(self, key, t=None):
+        t = self._now(t)
+        if key in (" ", "c", "C", "cancel", "escape"):
+            ok = self.alarm.cancel(t, "user_cancel")
+            if ok:
+                self.rearm_required = True
+                self.rearm_since = None
+                self.state = RECOVERED
+                self.t_state = None
+                self.t_clear = None
+            return ("cancel", ok)
+        if key in ("\r", "\n", "a", "A", "ack", "return"):
+            ok = self.alarm.acknowledge(t, resolved=True)
+            if ok:
+                self.rearm_required = True
+                self.rearm_since = None
+                self.state = RECOVERED
+                self.t_state = None
+                self.t_clear = None
+            return ("ack", ok)
+        if key in ("m", "M", "mute"):
+            self.alarm.muted = not self.alarm.muted
+            return ("mute", self.alarm.muted)
+        return ("unknown", False)
+
+    def _now(self, t):
+        return time.time() if t is None else t
+
+    # ---------------------------------------------------------- 主入口
+    def process(self, raw, frame, orig_w=640, orig_h=480, t=None):
+        t = self._now(t)
+        infos = self.det.process(raw, frame, orig_w, orig_h, timestamp=t)
+        if frame is not None:
+            self.frames.append((frame.copy(), t))
+        self.frame_i += 1
+
+        # 选主轨迹: 优先已确认/最严重, 否则置信度最高
+        best = None
+        if infos:
+            locked = None
+            if self.locked_tid is not None:
+                locked = next((d for d in infos
+                               if d.get("track_id") == self.locked_tid), None)
+                if locked is not None:
+                    best = locked
+                    self.locked_last_t = t
+                elif self.locked_since is not None and \
+                        t - self.locked_since <= self.track_lock_grace:
+                    # Do not switch to a bystander while the falling target is
+                    # temporarily missed. Keep the global state/timer intact.
+                    best = None
+                else:
+                    self.locked_tid = None
+                    self.locked_since = None
+            if best is None and self.locked_tid is None:
+                best = max(infos, key=lambda d: (
+                    _RANK.get(d["state"], 0), d["confidence"]))
+
+        out = None
+        if best is not None:
+            tid = best["track_id"]
+            x, _ = frame_feature(best, orig_w, orig_h,
+                                 getattr(self, "_last_scale", None))
+            self._last_scale = None            # 尺度由 frame_feature 内部决定
+            buf = self.buffers[tid]
+            buf.append(x)
+            self.feature_hist[tid].append((t, x.copy()))
+
+            # TCN 训练使用固定 30 FPS 的 1 秒窗口。实时摄像头帧率通常低于
+            # 30 FPS，因此按真实时间插值，而不是把 30 个“收到的帧”误当成
+            # 1 秒。仍保留 tcn_min_fill 的最短有效历史要求，避免刚出现目标
+            # 时用过度填充的窗口产生分数。
+            seq, hist_duration = self._resampled_window(tid, t)
+            min_duration = (WIN * self.tcn_min_fill) / float(self.fps)
+            if (self.tcn is not None and self.frame_i % self.tcn_every == 0
+                    and seq is not None and hist_duration >= min_duration):
+                try:
+                    self.tcn_prob[tid] = float(
+                        self.tcn.prob(seq.T[None].astype(np.float32))[0, 1])
+                except Exception as exc:        # noqa: BLE001
+                    self.log(f"[引擎] TCN 推理失败: {exc}")
+
+            fused, rule, p, ready = self._fuse(best, tid)
+            prev = self.state
+            if self.rearm_required:
+                # 告警已被人工处理，但人在未站起前不得再次触发。
+                if self._is_upright(best):
+                    if self.rearm_since is None:
+                        self.rearm_since = t
+                    elif t - self.rearm_since >= self.recover_time:
+                        self.rearm_required = False
+                        self.rearm_since = None
+                        self.t_state = None
+                        self.t_clear = None
+                        self.state = NORMAL
+                        self.alarm.reset(t)
+                else:
+                    self.rearm_since = None
+                st = self.state
+            else:
+                # A blocked frame is not valid confirmation evidence. In the
+                # observed false positive, a pending FALLING state survived
+                # MULTI_PERSON/EDGE_CROP frames and resumed on a later frame,
+                # allowing the hold timer to expire across invalid evidence.
+                # Reset only the *pending* state; an already CONFIRMED alarm is
+                # left intact and is handled by the normal recovery path.
+                blocked = best.get("mode") in (
+                    "EDGE_CROP", "MULTI_PERSON", "BLOCKED")
+                if blocked and self.state in (SUSPECT, FALLING):
+                    self.state = NORMAL
+                    self.t_state = None
+                    self.t_clear = None
+                st = self._advance(t, fused)
+            if st == FALLING and prev != FALLING:
+                self.locked_tid = int(tid)
+                self.locked_since = t
+                self.locked_last_t = t
+            elif st in (NORMAL, RECOVERED) and not self.rearm_required:
+                self.locked_tid = None
+                self.locked_since = None
+                self.locked_last_t = None
+            if st == CONFIRMED and prev != CONFIRMED:
+                self.alarm.confirm_fall(t, track=int(tid),
+                                        score=round(fused, 3),
+                                        rule=round(rule, 3),
+                                        tcn=(None if p is None else round(p, 3)))
+            out = {"state": st, "fused": fused, "rule": rule, "tcn": p,
+                   "tcn_ready": ready, "track_id": tid,
+                   "fill": min(1.0, hist_duration /
+                              max((WIN - 1) / float(self.fps), 1e-6)),
+                   "angle": best.get("angle"), "hip_norm": best.get("hip_norm"),
+                   "mode": best.get("mode"), "info": best}
+
+        # 轨迹消失后仍要推进告警(升级/重复)
+        acts = self.alarm.tick(t)
+        self.last = out
+        if out is not None:
+            out["alarm"] = self.alarm.state
+            out["alarm_acts"] = acts
+        return out
+
+    # ---------------------------------------------------------- 回流
+    def save_hard_negative(self, ctx, pre_seconds=8.0):
+        """把触发前后的视频存成 hard-negative, 回流训练集。"""
+        if not self.frames:
+            return None
+        t_end = ctx.get("t", self.frames[-1][1])
+        keep = [(f, tt) for f, tt in self.frames if tt >= t_end - pre_seconds]
+        if len(keep) < 5:
+            return None
+        try:
+            import cv2
+            os.makedirs(self.hard_neg_dir, exist_ok=True)
+            name = "hardneg_%s_%03d.avi" % (
+                time.strftime("%Y%m%d_%H%M%S"), len(self.hard_neg_saved))
+            path = os.path.join(self.hard_neg_dir, name)
+            h, w = keep[0][0].shape[:2]
+            vw = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*"MJPG"),
+                                 self.fps, (w, h))
+            for f, _ in keep:
+                vw.write(f)
+            vw.release()
+            self.hard_neg_saved.append(path)
+            return path
+        except Exception as exc:                    # noqa: BLE001
+            self.log(f"[引擎] hard-negative 写入失败: {exc}")
+            return None
+
+
+# ------------------------------------------------------------------ 自测
+def _fake(mode="POSE", angle=5.0, hip=0.45, drop=0.0, kscore=0.9,
+          trigger=False, conf=0.2, ref=None, aspect=1.0, pose_ok=True):
+    return {"mode": mode, "angle": angle, "hip_norm": hip, "drop": drop,
+            "kpt_score": kscore, "trigger": trigger, "confidence": conf,
+            "upright_ref": ref, "model_aspect_640": aspect, "pose_ok": pose_ok,
+            "track_id": 1, "state": "NORMAL"}
+
+
+def _selftest():
+    from alarm_manager import Player
+    fails = []
+
+    def check(name, cond, detail=""):
+        print(f"  {'✓' if cond else '✗'} {name}" + (f"  {detail}" if detail else ""))
+        if not cond:
+            fails.append(name)
+
+    def mk_engine(fake_tcn=None):
+        # 自测必须用 dry_run 播放器: 否则 confirm_fall 会真的调 aplay 并阻塞
+        from alarm_manager import Player
+        eng = FallEngine(det=object(), tcn=fake_tcn,
+                         alarm=AlarmManager(player=Player(dry_run=True),
+                                            log=lambda *a: None),
+                         log=lambda *a: None)
+        return eng
+
+    print("=" * 72)
+    print("融合决策引擎自测")
+    print("=" * 72)
+
+    # --- S1: 规则分曲线合理性 ---
+    print("\n[S1] 规则连续分")
+    e = mk_engine()
+    upright = FallEngine.rule_score(_fake(angle=4, hip=0.45, kscore=0.9))
+    lying_no_trig = FallEngine.rule_score(_fake(angle=80, hip=0.85, kscore=0.9))
+    lying_trig = FallEngine.rule_score(
+        _fake(angle=80, hip=0.85, kscore=0.9, trigger=True))
+    reject = FallEngine.rule_score(_fake(mode="REJECT", angle=88, hip=0.9))
+    check("直立分接近 0", upright < 0.15, f"{upright:.3f}")
+    check("躺平(未触发)分较高", lying_no_trig > 0.6, f"{lying_no_trig:.3f}")
+    check("触发时至少 0.65", lying_trig >= 0.65, f"{lying_trig:.3f}")
+    check("REJECT 恒为 0", reject == 0.0, f"{reject:.3f}")
+
+    # --- S1b: DEGRADED 直立不得接近阈值 (真实误报帧回归) ---
+    # 数值取自 2026-09-11 十分钟真实场景误报审计里分数最高的那一簇
+    # (frames.csv t=458.38~458.98, 11 帧连发, rule 最高 0.448):
+    #     人完全直立(angle=1.54°) 却因横比+下坠被 DEGRADED 打成 0.448
+    print("\n[S1b] DEGRADED 直立衰减 ★真实误报帧回归")
+    real = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=1.54, hip=1.054, drop=0.311,
+        kscore=0.340, conf=0.470, aspect=1.9))
+    upright_deg = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=2.0, hip=0.80, drop=0.30,
+        kscore=0.45, conf=0.47, aspect=1.9))
+    tilt_deg = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=17.0, hip=0.85, drop=0.30,
+        kscore=0.45, conf=0.47, aspect=1.9))
+    lying_deg = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=75.0, hip=0.95, drop=0.30,
+        kscore=0.45, conf=0.47, aspect=1.9))
+    no_ang_deg = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=float("nan"), hip=0.95, drop=0.30,
+        kscore=0.45, conf=0.47, aspect=1.9))
+    check("真实误报帧被压到疑似线下", real < 0.50, f"0.448 -> {real:.3f}")
+    # 断言用"相对阈值"而不是拍脑袋的常数: 直立 DEGRADED 必须离疑似线 0.50
+    # 有足够余量(实测 0.221~0.234, 约 2.2 倍余量); 17° 半倾斜仍须在疑似线下。
+    check("直立 DEGRADED 远离疑似线(<60%)", upright_deg < 0.50 * 0.60,
+          f"{upright_deg:.3f} vs 0.50")
+    check("半倾斜 17° 仍在疑似线下", tilt_deg < 0.50, f"{tilt_deg:.3f}")
+    check("躺平 75° 不受衰减(召回不受损)", lying_deg > 0.40, f"{lying_deg:.3f}")
+    check("角度缺失时不衰减(保留兜底)", no_ang_deg > 0.40, f"{no_ang_deg:.3f}")
+    check("衰减是单调的(角度越大分越高)",
+          upright_deg < tilt_deg < lying_deg,
+          f"{upright_deg:.3f} < {tilt_deg:.3f} < {lying_deg:.3f}")
+    # 衰减不得把真跌倒压到确认不了: 躺平+触发 仍要能过 0.65
+    lying_trig_deg = FallEngine.rule_score(_fake(
+        mode="DEGRADED", angle=75.0, hip=0.95, drop=0.30,
+        kscore=0.45, conf=0.47, aspect=1.9, trigger=True))
+    check("躺平+触发 仍能达到确认线", lying_trig_deg >= 0.65,
+          f"{lying_trig_deg:.3f}")
+
+    # --- S2: 快速跌倒 -> 确认 ---
+    print("\n[S2] 快速跌倒: 规则高 + TCN 高 -> CONFIRMED")
+    e = mk_engine()
+    e.tcn_prob[1] = 0.95
+    f, r, p, ready = e._fuse(_fake(angle=85, hip=0.9, trigger=True), 1)
+    check("融合分 > 确认阈值", f >= e.confirm_score, f"{f:.3f}")
+    st = e._advance(0.0, f)
+    check("0s -> FALLING", st == FALLING, st)
+    st = e._advance(0.6, f)
+    check("0.6s -> CONFIRMED", st == CONFIRMED, st)
+
+    # --- S3: 缓慢躺下 -> 必须不确认 (核心用例) ---
+    print("\n[S3] 缓慢躺下: 规则高 但 TCN 低 -> 绝不能确认 ★核心")
+    e = mk_engine()
+    e.tcn_prob[1] = 0.12
+    f, r, p, ready = e._fuse(_fake(angle=88, hip=0.88, trigger=True), 1)
+    check("融合分 < 确认阈值", f < e.confirm_score, f"{f:.3f}")
+    check("融合分 < 疑似阈值(完全不报警)", f < e.suspect_score, f"{f:.3f}")
+    st = e._advance(0.0, f)
+    check("保持 NORMAL", st == NORMAL, st)
+    for tt in (0.5, 1.0, 2.0, 5.0):
+        st = e._advance(tt, f)
+    check("5s 后仍是 NORMAL", st == NORMAL, st)
+
+    # --- S4: TCN 未就绪 -> 最多 SUSPECT, 不出声 ---
+    print("\n[S4] TCN 未就绪: 规则触发 -> 只到 SUSPECT")
+    e = mk_engine(fake_tcn=object())
+    f, r, p, ready = e._fuse(_fake(angle=88, hip=0.9, trigger=True), 1)
+    check("ready=False", ready is False)
+    check("融合分被压到确认阈值以下", f < e.confirm_score, f"{f:.3f}")
+    st = e._advance(0.0, f)
+    check("状态不是 CONFIRMED", st != CONFIRMED, st)
+    check("告警未被触发", e.alarm.state == "IDLE", e.alarm.state)
+
+    # --- S5: 确认后站起 -> 复位 ---
+    print("\n[S5] 确认后站起 -> 复位")
+    e = mk_engine()
+    e.tcn_prob[1] = 0.95
+    hi = e._fuse(_fake(angle=85, hip=0.9, trigger=True), 1)[0]
+    e._advance(0.0, hi)
+    e._advance(0.6, hi)
+    check("已 CONFIRMED", e.state == CONFIRMED, e.state)
+    # 站起来后 TCN 也会给出低分(真实运行时它每 3 帧重算一次)
+    e.tcn_prob[1] = 0.05
+    lo = e._fuse(_fake(angle=4, hip=0.45), 1)[0]
+    check("直立融合分很低", lo < e.recover_score, f"{lo:.3f}")
+    e._advance(1.0, lo)
+    e._advance(3.0, lo)
+    check("复位为 RECOVERED", e.state == RECOVERED, e.state)
+
+    # --- S5b: 直立否决 —— TCN 误报不得把直立的人判成跌倒 ---
+    print("\n[S5b] 直立否决: TCN 高分 但姿态明确直立 -> 不报警")
+    e = mk_engine()
+    e.tcn_prob[1] = 0.95                       # TCN 误报
+    f, r, p, _ = e._fuse(_fake(angle=3, hip=0.46, trigger=False), 1)
+    check("融合分被否决压低", f <= e.upright_veto_score + 1e-6, f"{f:.3f}")
+    check("不进入疑似", e._advance(0.0, f) == NORMAL, e.state)
+    # 对照: 同一 TCN 分数下若真躺平, 应当报警
+    lf = e._fuse(_fake(angle=86, hip=0.9, trigger=True), 1)[0]
+    check("对照-真躺平仍会报警", lf >= e.confirm_score, f"{lf:.3f}")
+
+    # --- S6: 确认 -> 撤销键 -> 告警取消 ---
+    print("\n[S6] 确认后按撤销键")
+    e = mk_engine()
+    e.tcn_prob[1] = 0.95
+    hi = e._fuse(_fake(angle=85, hip=0.9, trigger=True), 1)[0]
+    e._advance(0.0, hi)
+    e._advance(0.6, hi)
+    e.alarm.confirm_fall(1.0, track=1)
+    check("告警 ALERTING", e.alarm.state == "ALERTING_L1", e.alarm.state)
+    kind, ok = e.on_key(" ", t=2.0)
+    check("撤销成功", kind == "cancel" and ok is True, f"{kind},{ok}")
+    check("告警 CANCELLED", e.alarm.state == "CANCELLED", e.alarm.state)
+
+    # --- S7: 确认键 ---
+    print("\n[S7] 确认键")
+    e = mk_engine()
+    e.alarm.confirm_fall(1.0, track=1)
+    kind, ok = e.on_key("a", t=2.0)
+    check("确认成功", kind == "ack" and ok is True, f"{kind},{ok}")
+    check("告警 ACKED", e.alarm.state == "ACKNOWLEDGED", e.alarm.state)
+    check("引擎进入 RECOVERED", e.state == RECOVERED, e.state)
+
+    # --- S8: 静音开关 ---
+    print("\n[S8] 静音开关")
+    e = mk_engine()
+    check("初始未静音", e.alarm.muted is False)
+    k, v = e.on_key("m")
+    check("切换为静音", v is True and e.alarm.muted is True)
+
+    # --- S9: 阈值可配置 ---
+    print("\n[S9] 阈值可配置")
+    e = FallEngine(det=object(), tcn=None,
+                   w_rule=0.1, w_tcn=0.9, confirm_score=0.8,
+                   alarm=AlarmManager(player=Player(dry_run=True),
+                                      log=lambda *a: None), log=lambda *a: None,
+                   upright_veto_score=0.0)     # 关掉否决, 单独验证权重生效
+    check("w_tcn 生效", e.w_tcn == 0.9)
+    check("confirm_score 生效", e.confirm_score == 0.8)
+    e.tcn_prob[1] = 0.5
+    f = e._fuse(_fake(angle=85, hip=0.9, trigger=True), 1)[0]
+    check("高 TCN 权重下融合分被拉低", f < 0.8, f"{f:.3f}")
+
+    print("\n" + "=" * 72)
+    if fails:
+        print(f"结果: 失败 {len(fails)} 项 -> {fails}")
+        return 1
+    print("结果: 全部通过 ✓")
+    return 0
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--selftest", action="store_true")
+    args = ap.parse_args()
+    if args.selftest:
+        return _selftest()
+    print("用法: python3 fall_engine.py --selftest")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
